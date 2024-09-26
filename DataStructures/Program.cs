@@ -9,6 +9,7 @@ namespace DataStructures
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             MainMenu();
@@ -53,12 +54,12 @@ namespace DataStructures
 
                 string userInput = Console.ReadLine();
 
-                if(int.TryParse(userInput, out int integerInput))
+                if (int.TryParse(userInput, out int integerInput))
                 {
                     switch (integerInput)
                     {
                         case 0:
-                            Enviroment.Exit(0);
+                            Environment.Exit(0);
                             break;
                         case 1:
                             ListMovies();
@@ -88,6 +89,11 @@ namespace DataStructures
             public double Price;
             public MovieRating Rating;
         }
+    }
+}
+
+    
+    
 
 
 
